@@ -6,24 +6,499 @@
     <title>TailwindCSS E-Commerce Project</title>
 </head>
 <body>
-    <div class="container mx-auto p-2">
-    <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
-        <div class="">
-            <h1> TailwindCSS E-commerce Project</h1>
-            <p>
-                "Ecommerce" or "electronic commerce" is the trading of goods and services on the internet. It is your bustling city center or brick-and-mortar shop translated into zeroes and ones on the internet superhighway.
+    <!-- Header section start -->
+    <div class="bg-purple-100">
+        <div class="container mx-auto p-2">
+          <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
+            <div class="space-y-6 md:text-left text-center">
+              <span
+                class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
+                >Tailwind e-commerce</span
+              >
+              <p class="text-gray-600 font-light text-justify">
+                Ecommerce is a method of buying and selling goods and services online. E-commerce is the activity of electronically buying or selling products on online services or over the Internet. 
+              </p>
+              <button
+                class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
+                </svg>
+                <span class="ml-2">Buy Now</span>
+              </button>
+            </div>
+            <div class="">
+              <img class="w-full" src="./images/shop.png" alt="Shop" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header section end -->
+  
+      <!-- Why us start -->
+      <div class="container mx-auto p-2 my-24">
+        <h1
+          class="text-center text-4xl text-gray-700 underline decoration-double underline-offset-8 decoration-2 decoration-pink-600 capitalize"
+        >
+          Why you should choose us?
+        </h1>
+        <div class="flex mt-16 justify-center gap-8 md:flex-nowrap flex-wrap">
+          <div class="bg-green-100 text-center p-4 shadow-lg rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-24 w-24 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+              />
+            </svg>
+            <h2 class="text-2xl mt-8">High Quality of Product</h2>
+          </div>
+          <div class="bg-purple-100 text-center p-4 shadow-lg rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-24 w-24 mx-auto"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+              <path
+                fill-rule="evenodd"
+                d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="text-2xl mt-8 capitalize">Easy payment system</h2>
+          </div>
+          <div class="bg-indigo-100 text-center p-4 shadow-lg rounded">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-24 w-24 mx-auto"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
+            </svg>
+            <h2 class="text-2xl mt-8">Secure Payment System</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Why us end -->
+  
+      <!-- Top Selling products start   -->
+      <div class="container mx-auto p-2">
+        <h1
+          class="text-left text-4xl text-gray-700 underline decoration-double underline-offset-8 decoration-2 decoration-pink-600 text-center "
+        >
+          Top Selling Products
+        </h1>
+        <div class="flex justify-center md:flex-nowrap flex-wrap gap-8 mt-16">
+          <div class="bg-orange-100 p-4 space-y-4 rounded shadow-lg">
+            <img class="w-72 mx-auto" src="./images/coconut.png" alt="" />
+            <h2 class="text-2xl font-bold text-center">Coconat Oil</h2>
+            <p class="text-gray-700 text-justify">
+                Coconut oil is an edible oil derived from the kernels, meat, and milk of the coconut palm fruit. Coconut oil is a white solid fat below around 25 °C, and la liga bundesliga a clear thin liquid oil in warmer climates. 
             </p>
-            <button>
-                Buy Now 
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
             </button>
+          </div>
+          <div class="bg-indigo-100 p-4 space-y-4 rounded shadow-lg">
+            <img class="w-72 mx-auto" src="./images/peanut.png" alt="" />
+            <h2 class="text-2xl font-bold text-center ">Peanut Oil</h2>
+            <p class="text-gray-700 text-justify">
+                Peanut oil, also known as groundnut oil or arachis oil, is a vegetable oil derived from peanuts. The oil usually has a mild or neutral flavor but, if made with roasted peanuts, has a stronger peanut flavor and aroma.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-purple-100 p-4 space-y-4 rounded shadow-lg">
+            <img class="w-72 mx-auto" src="./images/tea-tree.png" alt="" />
+            <h2 class="text-2xl font-bold capitalize text-center ">Tea tree oil</h2>
+            <p class="text-gray-700">
+                The aboriginal people of Australia have traditionally used tea tree oil as an antiseptic (germ killer) and an herbal medicine. Today, external use of tea tree oil is promoted for various conditions such as acne.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
         </div>
-        <div class="">
-            <img class="w-full" src="https://www.indiafilings.com/learn/wp-content/uploads/2023/03/How-can-I-register-my-shop-and-establishment-online.jpg" alt="Shop">
-            <!--https://retailsolution.com.bd/wp-content/uploads/2023/05/Super-Shop-Management-Software-in-Bangladesh.jpg-->
+      </div>
+      <!-- Top Selling products end   -->
+  
+      <!-- Popular Oil products start -->
+      <div class="container mx-auto p-2 my-24">
+        <h1
+          class="text-left text-4xl text-gray-700 underline decoration-double underline-offset-8 decoration-2 decoration-pink-600 text-center "
+        >
+          Most Popular Products
+        </h1>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+          <div class="bg-red-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/avocado-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Avocado Oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit.sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-purple-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/hemp-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Hemp Oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit.sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-green-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/nuts.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Nuts oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit. sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-pink-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/peanut-butter.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Peanut butter oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit. sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-orange-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/pumpkin-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Pumpkin oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit. sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-blue-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/sunfloower-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Sunflower oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit. sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-red-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/avocado-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Avocado Oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit.sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-red-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/avocado-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Avocado Oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit.sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
+          <div class="bg-yellow-100 p-4 space-y-4 rounded shadow-lg">
+            <img
+              class="w-72 mx-auto"
+              src="./images/oil products/walnut-oil.png"
+              alt=""
+            />
+            <h2 class="text-2xl font-bold">Walnut oil</h2>
+            <p class="text-gray-700">
+              sit amet, consectetur adipisicing elit. Ducimus, odit. sit amet,
+              consectetur adipisicing elit. Ducimus, odit.
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                />
+              </svg>
+              <span class="ml-2">Buy Now</span>
+            </button>
+          </div>
         </div>
-    </div>    
-    </div>
+      </div>
+      <!-- Popular Oil products end -->
+  
+      <!-- Our Policy section start -->
+  
+      <div class="container mx-auto p-2 mt-24">
+        <h1
+          class="text-center text-4xl text-gray-700 underline decoration-double underline-offset-8 decoration-2 decoration-pink-600"
+        >
+          Our Business Policies
+        </h1>
+        <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
+          <div class="md:w-1/2 w-full">
+            <img class="w-full" src="./images/cartoon.png" alt="Shop" />
+          </div>
+          <div class="space-y-6 md:text-left text-center md:w-1/2 w-full">
+            <span
+              class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
+              >Our Trusted Business Policy</span
+            >
+            <p class="text-gray-600 font-light">
+              Nostrum soluta accusantium eligendi fugiat rem tenetur porro sit,
+              obcaecati iste, iure quidem commodi minima! Iure similique
+              laboriosam iusto consectetur, atque impedit! Nostrum soluta
+              accusantium eligendi fugiat rem tenetur porro sit, obcaecati iste,
+              iure quidem commodi minima! Iure similique laboriosam iusto
+              consectetur, atque impedit!
+            </p>
+            <button
+              class="bg-gradient-to-r from-purple-600 to-pink-600 py-2 px-4 text-white font-bold rounded shadow-lg shadow-purple-500/25 flex items-center mx-auto md:ml-0"
+              
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <h2> 
+                <a href="https://daraz.com/who-we-are/#:~:text=Daraz%20Group%20was%20formed%20in,Pakistan%2C%20Sri%20Lanka%20and%20Nepal." target="_blank">Read More</a>
+                
 
+              </h2>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Our Policy section end -->
+  
+      <!-- Footer section start  -->
+      <div class="mt-16 bg-purple-700">
+        <p class="text-center text-white text-center p-5">
+          All Right Reserved &copy; 2023 TailwindCSS E-Commerce Project
+        </p>
+      </div>
+      <!-- Footer section end  -->
+
+    
 
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
